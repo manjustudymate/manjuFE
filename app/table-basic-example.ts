@@ -24,6 +24,7 @@ export class TableBasicExample {
   constructor(private service: APIServiceService) {
     this.service.getData().then((data) => {
       this.dataSource = data;
+      console.log(data);
     });
   }
 }
